@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Roboto+Condensed:ital,wght@1,100&family=Ubuntu:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+    background-image: url("assets/images/img1.jpg");
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 96vh;
+    position: relative;
+}
+
+.main .box{
+    height: 96vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav{
+    max-width: 97vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+nav img{
+    color: red;
+    width: 114px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.text{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.text> :nth-child(1){
+    font-size: 48px;
+    font-weight: 900;
+    text-align: center;
+}
+ 
+ .text> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400px;
+    text-align: center;
+ }
+
+ .text> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400px;
+    text-align: center;
+ }
+
+ .separation{
+    height: 8px;
+    background-color: rgb(46, 44, 44);
+ }
+
+ .btn{
+    padding: 7px 10px;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid white;
+    cursor: pointer;
+    background-color: rgba(248, 243, 243, 0.021);
+    transform: all 0.3s ease-in-out;
+ }
+
+ .btn-red-sm{
+    background-color: red;
+    border-radius: 4px;
+    color: white;
+    padding: 5px 13px;
+    font-size: 17px;
+ }
+
+ .btn-red{
+    background-color: red;
+    padding: 9px 24px;
+    font-size: 27px;
+    border-radius: 7px;
+    color: white;
+ }
+
+ .main input{
+    padding: 14px 120px 15px 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgba(230, 223, 223, 0.5);
+    font-weight: 100;
+    color: white;
+ }
+
+ .qwe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+ }
+
+ .first{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 77vw;
+    margin-bottom: 45px;
+ }
+
+ @media  screen and (max-width: 1280px){
+   .first, .second, .third{
+      flex-wrap: wrap;
+   }
+
+   .first > div :nth-child(1){
+      text-align: center;
+   }
+
+   .first > div :nth-child(2){
+      text-align: center;
+   }
+
+   *{
+      text-align: center;
+      overflow-x: hidden;
+   }
+ }
+
+ .image1{
+    position: relative;
+ }
+
+ .image1 img{
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+ }
+
+ .image1 video{
+    position: absolute;
+    top: 80px;
+    right: 1px;
+ }
+
+ section .first > div{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding: 30px 0;
+ }
+
+ .first > div :nth-child(2){
+    font-size: 24px;
+ }
+
+ .second{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 77vw;
+    margin-bottom: 48px;
+ }
+
+ .image2 img{
+    max-width: 36vw;
+ }
+
+ section .truth{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .truth :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+ }
+
+ .truth :nth-child(2){
+    font-size: 24px;
+ }
+
+ .third{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 80px;
+    max-width: 77vw;
+    margin-bottom: 45px;
+ }
+
+ .image3{
+    position: relative;
+ }
+
+ .image3 img{
+    max-width: 555px;
+    position: relative;
+    z-index: 10;
+ }
+
+ .image3 video{
+   position: absolute;
+   top: 47px;
+   right: -16px;
+   height: 47%;
+   width: 106%;
+ }
+
+ section .third > div{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .third > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+ }
+
+ .third > div :nth-child(2){
+    font-size: 24px;
+ }
+
+ h2{
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    margin-top: 55px;
+    font-size: 48px;
+    margin-bottom: 18px;
+ }
+
+ .faqbox svg{
+    filter: invert(1);
+ }
+
+ .faqbox{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d2d;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 66vw;
+    font-size: 24px;
+    cursor: pointer;
+ }
+
+ .faqbox:hover{
+    background-color: #414141; 
+ }
+
+ h3{
+   font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+   text-align: center;
+   color: white;
+   font-weight: 400;
+   margin-top: 55px;
+   font-size: 20px;
+   margin-bottom: 18px;
+ }
+
+ section input{
+   padding: 14px 120px 15px 15px;
+    font-size: 15px;
+    border-radius: 7px;
+    background-color: rgba(23, 23, 23, 0.8);
+    border: 1px solid rgba(230, 223, 223, 0.5);
+    font-weight: 100;
+    color: white; 
+ }
+
+ footer{
+   color: white;
+   max-width: 75vw;
+   margin: auto;
+   padding: 14px;
+   margin-bottom: 55px;
+ }
+
+ .footer{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   color: white;
+ }
+
+ .footer-item{
+   display: flex;
+   flex-direction: column;
+   gap: 23px;
+ }
+
+ footer a{
+   color: white;
+ }
+
+ .footer a{
+   color: white;
+   font-size: 14px;
+ }
+
+ footer .questions{
+   margin-top: 35px;
+   margin-bottom: 35px;
+ }
+
+
